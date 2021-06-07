@@ -70,6 +70,7 @@ export default {
 
   &__text {
     margin-top: 2rem;
+    text-align: center;
   }
 
   &__content {
