@@ -18,21 +18,17 @@
     >
       <ul class="header__menu__inner">
         <li v-for="(menuItem, menuIndex) in menuList" :key="`menu-${menuIndex}`" class="header__menu__inner__item" @click="menuBtnActive = !menuBtnActive">
-          <nuxt-link :to="menuItem.url" class="header__menu__inner__item__inner fontUppercase" :target="menuItem.isBlank">
-            <span v-if="menuItem.note" class="header__menu__inner__item__inner fontUppercase" style="padding-top: 0;">
-              {{ menuItem.text }}
-            </span>
-            <span v-else class="header__menu__inner__item__inner fontUppercase" style="padding: 0;">
-              {{ menuItem.text }}
-            </span>
-            <p v-if="menuItem.note" class="font-s fontUppercase" style="color: #707070; font-size: 1.4rem;">※{{ menuItem.text }}は現在準備中です</p>
-          </nuxt-link>
+          <nuxt-link :to="menuItem.url" class="header__menu__inner__item__inner fontUppercase" :target="menuItem.isBlank">{{ menuItem.text }}</nuxt-link>
         </li>
-        <li v-for="(menuItem, menuExtraIndex) in menuListExtraLink" :key="`menuExtra-${menuExtraIndex}`" class="header__menu__inner__item">
-          <span class="header__menu__inner__item__inner fontUppercase">
-            {{ menuItem.text }}
-          </span>
-          <p class="font-s fontUppercase" style="color: #707070; font-size: 1.4rem;">※online shopは現在準備中です</p>
+        <li v-for="(menuItem, menuIndex) in menuListExtraLink" :key="`menuExtra-${menuIndex}`" class="header__menu__inner__item" @click="menuBtnActive = !menuBtnActive">
+          <a :href="menuItem.url" class="header__menu__inner__item__inner fontUppercase" :target="menuItem.isBlank">{{ menuItem.text }}</a>
+        </li>
+        <li class="header__menu__inner__item">
+          <ul class="header__menu__inner__item__sns-list">
+            <li v-for="(snsItem, snsIndex) in snsItemList" :key="`sns-${snsIndex}`" class="header__menu__inner__item__sns-list__item" @click="menuBtnActive = !menuBtnActive">
+              <a :href="snsItem.url" target="_blank"><img :src="snsItem.src" :alt="snsItem.alt"></a>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -57,71 +53,80 @@ export default {
         {
           text: 'home',
           url: '/',
-          isBlank: 'false',
+          isBlank: '',
           note: false
         },
         {
           text: 'news',
           url: '/news/',
-          isBlank: 'false',
+          isBlank: '',
           note: false
         },
         {
           text: 'about',
           url: '/about/',
-          isBlank: 'false',
+          isBlank: '',
           note: false
         },
         {
           text: 'profile',
           url: '/profile/',
-          isBlank: 'false',
+          isBlank: '',
           note: false
         },
         {
           text: 'schedule',
           url: '/schedule/',
-          isBlank: 'false',
+          isBlank: '',
           note: false
         },
         {
           text: 'discography',
-          url: '',
-          isBlank: 'false',
-          note: true
+          url: '/discography/',
+          isBlank: '',
+          note: false
         },
-        // {
-        //   text: 'discography',
-        //   url: '/discography/',
-        //   isBlank: 'false'
-        // },
         {
           text: 'faq',
-          url: '',
-          isBlank: 'false',
-          note: true
+          url: '/faq/',
+          isBlank: '',
+          note: false
         },
-        // {
-        //   text: 'faq',
-        //   url: '/faq/',
-        //   isBlank: 'false'
-        // },
         {
           text: 'contact',
           url: '/contact/',
-          isBlank: 'false',
+          isBlank: '',
           note: false
         }
       ],
       menuListExtraLink: [
         {
           text: 'online shop',
-          url: ''
+          url: 'https://overflow.official.ec',
+          isBlank: '_blank'
         }
+      ],
+      snsItemList: [
+        {
+          url: 'https://twitter.com/OVER_FLOW_info',
+          src: require('~/assets/images/sns/twitter.png'),
+          alt: 'Twitterロゴ'
+        },
         // {
-        //   text: 'online shop',
-        //   url: 'https://overflow.official.ec'
-        // }
+        //   url: 'https://www.instagram.com/idlidl2021/?igshid=5e2hjn3jeaha',
+        //   src: require('~/assets/images/sns/instagram.png'),
+        //   alt: 'Instagramロゴ'
+        // },
+        {
+          url: 'https://www.youtube.com/channel/UCanSgEracEOhy8DaI8M3X3w',
+          src: require('~/assets/images/sns/youtube.png'),
+          alt: 'YouTubeロゴ'
+        },
+        {
+          url: 'https://linkco.re/aEZSP6yg',
+          src: require('~/assets/images/sns/applemusic.png'),
+          alt: 'apple musicロゴ'
+        }
       ]
     }
   },
@@ -271,6 +276,8 @@ export default {
 .header__menu {
   height: 100%;
   width: 55%;
+  min-width: 18rem;
+  max-width: 22rem;
   padding: 6.4rem 1.5rem 0;
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
@@ -313,7 +320,23 @@ export default {
   right: 0;
 }
 
-@media screen and (min-width: 768px) {
+// SNSリストここから
+.header__menu__inner__item:last-of-type {
+  margin-top: 4rem;
+}
+
+.header__menu__inner__item__sns-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    width: 4rem;
+  }
+}
+// SNSリストここまで
+
+@media screen and (min-width: 769px) {
   .header__inner {
     max-width: 100rem;
     margin: auto;
@@ -343,5 +366,11 @@ export default {
       font-size: 2.0rem;
     }
   }
+
+  // SNSリストここから
+  .header__menu__inner__item:last-of-type {
+    margin-top: 2rem;
+  }
+  // SNSリストここまで
 }
 </style>
