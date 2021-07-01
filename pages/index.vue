@@ -5,6 +5,7 @@
       <img src="~/assets/images/kv/kv-pc-text2.jpg" alt="OVERFLOWアーティスト写真" class="pc">
     </h1>
     <div class="main-inner">
+      <btn-information />
       <!-- news -->
       <section class="top-section news">
         <div class="top-section__header">
@@ -163,8 +164,6 @@ main.home {
   }
 
   &:first-of-type {
-    overflow: hidden;
-
     &::before {
       content: '';
       display: block;
