@@ -49,18 +49,23 @@ export default {
         {
           url: 'https://twitter.com/OVER_FLOW_info',
           src: require('~/assets/images/sns/twitter.png'),
-          alt: 'hoge'
-        }
+          alt: 'Twitterロゴ'
+        },
         // {
         //   url: 'https://www.instagram.com/idlidl2021/?igshid=5e2hjn3jeaha',
         //   src: require('~/assets/images/sns/instagram.png'),
-        //   alt: 'hoge'
+        //   alt: 'Instagramロゴ'
         // },
-        // {
-        //   url: 'https://www.youtube.com/',
-        //   src: require('~/assets/images/sns/youtube.png'),
-        //   alt: 'hoge'
-        // }
+        {
+          url: 'https://www.youtube.com/channel/UCanSgEracEOhy8DaI8M3X3w',
+          src: require('~/assets/images/sns/youtube.png'),
+          alt: 'YouTubeロゴ'
+        },
+        {
+          url: 'https://linkco.re/aEZSP6yg',
+          src: require('~/assets/images/sns/applemusic.png'),
+          alt: 'apple musicロゴ'
+        }
       ],
       bnrItemList: [
         // {
@@ -71,13 +76,9 @@ export default {
       ],
       linkItemList: [
         {
-          url: '',
+          url: '/faq/',
           text: 'よくあるご質問'
         },
-        // {
-        //   url: '/faq/',
-        //   text: 'よくあるご質問'
-        // },
         {
           url: '/contact/',
           text: 'お問い合わせ'
