@@ -58,7 +58,7 @@ export default {
       src: require('~/assets/images/member/miyato_square.jpg'),
       alt: '宮渡ひなこのアー写',
       nameJa: '宮渡 ひなこ',
-      nameEn: 'honako miyato',
+      nameEn: 'hinako miyato',
       infoList: [
         {
           title: '誕生日',
