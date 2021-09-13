@@ -50,22 +50,6 @@ export default {
     return {
       memberList: [
         {
-          name: '神崎 ひめの',
-          src: require('~/assets/images/member/kanzaki_square.jpg'),
-          alt: '神崎ひめののアー写',
-          url: '/profile/member/kanzaki/',
-          id: 'kanzaki',
-          display: this.kanzaki
-        },
-        {
-          name: '立花 ことね',
-          src: require('~/assets/images/member/tachibana_square.jpg'),
-          alt: '立花ことねのアー写',
-          url: '/profile/member/tachibana/',
-          id: 'tachibana',
-          display: this.tachibana
-        },
-        {
           name: '西名 ゆめ',
           src: require('~/assets/images/member/nishina_square.jpg'),
           alt: '西名ゆめのアー写',

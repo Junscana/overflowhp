@@ -1,8 +1,8 @@
 <template>
   <main class="home">
     <h1 class="key-visual">
-      <img src="~/assets/images/kv/kv-sp-text.jpg" alt="OVERFLOWアーティスト写真" class="sp">
-      <img src="~/assets/images/kv/kv-pc-text2.jpg" alt="OVERFLOWアーティスト写真" class="pc">
+      <img src="~/assets/images/kv/kv210913--sp.jpg" alt="OVERFLOWアーティスト写真" class="sp">
+      <img src="~/assets/images/kv/kv210913--pc.jpg" alt="OVERFLOWアーティスト写真" class="pc">
     </h1>
     <div class="main-inner">
       <btn-information />
