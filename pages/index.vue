@@ -19,6 +19,7 @@
               <sapn v-text="$dayjs(content.published).locale('ja').format('YYYY/MM/DD')"  class="artile__item__inner__header__date" />
               <span v-if="content.category == 'event'" class="artile__item__inner__header__category event fontUppercase">event</span>
               <span v-if="content.category == 'news'" class="artile__item__inner__header__category news fontUppercase">news</span>
+              <span v-if="content.category == 'information'" class="artile__item__inner__header__category info fontUppercase">information</span>
               <span v-if="content.category == 'media'" class="artile__item__inner__header__category media fontUppercase">media</span>
             </div>
             <div class="artile__item__inner__body">
