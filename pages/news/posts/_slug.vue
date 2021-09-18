@@ -11,6 +11,7 @@
             <dd>
               <span v-if="item.category == 'event'" class="article-content__category event fontUppercase">event</span>
               <span v-if="item.category == 'news'" class="article-content__category news fontUppercase">news</span>
+              <span v-if="item.category == 'information'" class="article-content__category info fontUppercase">information</span>
               <span v-if="item.category == 'media'" class="article-content__category media fontUppercase">media</span>
             </dd>
             <dt><h2 class="article-content__header__title">{{ item.title }}</h2></dt>
