@@ -86,6 +86,7 @@ export default {
 
   &__title {
     margin-top: 1rem;
+    font-size: 2.0rem;
   }
 
   dt {
@@ -120,6 +121,10 @@ export default {
   a {
     color: #1a0dab;
     text-decoration: underline;
+  }
+
+  &__inner {
+    line-height: initial;
   }
 }
 
