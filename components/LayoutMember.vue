@@ -50,28 +50,12 @@ export default {
     return {
       memberList: [
         {
-          name: '西名 ゆめ',
-          src: require('~/assets/images/member/nishina_square.jpg'),
-          alt: '西名ゆめのアー写',
-          url: '/profile/member/nishina/',
-          id: 'member1',
-          display: this.nishina
-        },
-        {
           name: '本多 あおい',
           src: require('~/assets/images/member/honda_square.jpg'),
           alt: '本多あおいのアー写',
           url: '/profile/member/honda/',
           id: 'honda',
           display: this.honda
-        },
-        {
-          name: '宮渡 ひなこ',
-          src: require('~/assets/images/member/miyato_square.jpg'),
-          alt: '宮渡ひなこのアー写',
-          url: '/profile/member/miyato/',
-          id: 'miyato',
-          display: this.miyato
         },
         {
           name: '柚月 みほ',
