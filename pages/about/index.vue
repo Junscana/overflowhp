@@ -5,7 +5,7 @@
       <div class="page-body">
         <section class="group">
           <div class="group__image">
-            <img src="~/assets/images/kv/kv210913--pc.jpg" alt="OVERFLOWアーティスト写真">
+            <img src="~/assets/images/kv/kv__coming-soon--pc.jpg" alt="OVERFLOWアーティスト写真">
           </div>
           <div class="group__desc">
             <p class="group__desc__text">2021.06.19 OVERFLOWデビュー単独LIVE@白金高輪SELENE b2開催</p>
