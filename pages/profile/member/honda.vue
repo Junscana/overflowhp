@@ -1,6 +1,6 @@
 <template>
   <main class="honda">
-    <page-title title="profile" />
+    <!-- <page-title title="profile" />
     <div class="page-body">
       <div class="page-member">
         <div class="page-member__img">
@@ -33,7 +33,7 @@
       <layout-member honda="hide" />
     </div>
     <layout-btn-default url="/profile/" text="メンバー一覧に戻る" />
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

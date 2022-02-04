@@ -1,6 +1,6 @@
 <template>
   <main class="news">
-    <section class="page-contents">
+    <!-- <section class="page-contents">
       <page-title title="news" />
       <div class="page-body">
         <ul class="article">
@@ -42,7 +42,7 @@
         </client-only>
       </div>
     </section>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

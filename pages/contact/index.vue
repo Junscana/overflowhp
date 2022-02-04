@@ -1,6 +1,6 @@
 <template>
   <main class="contact">
-    <page-title title="contact" />
+    <!-- <page-title title="contact" />
     <div class="page-body">
       <p class="contact-desc">グループに関してや出演など依頼などは下記ボタンよりお問い合わせください。</p>
       <div class="btn-area">
@@ -10,7 +10,7 @@
         >お問い合わせはこちら</a>
       </div>
     </div>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <main class="discograpy">
-    <page-title title="discograpy" />
+    <!-- <page-title title="discograpy" />
     <div class="page-body">
       <ul class="tune-list">
         <li v-for="tuneItem in tuneList" :key="tuneItem.index" class="tune-list__item">
@@ -22,7 +22,7 @@
     <Modal v-if="modalFlag" @close-modal="closeModal" >
       <div style="white-space:pre-wrap;">{{ lyrics }}</div>
     </Modal>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

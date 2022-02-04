@@ -1,6 +1,6 @@
 <template>
   <main class="faq">
-    <page-title title="faq" />
+    <!-- <page-title title="faq" />
     <div class="page-body">
       <div class="accordion">
         <ul class="accordion__inner">
@@ -30,7 +30,7 @@
         </ul>
       </div>
     </div>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

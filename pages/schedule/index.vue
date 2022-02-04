@@ -1,12 +1,12 @@
 <template>
   <main>
-    <section>
+    <!-- <section>
       <page-title title="schedule" />
       <div class="page-body">
         <layout-schedule />
       </div>
     </section>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

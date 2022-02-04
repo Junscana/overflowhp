@@ -1,6 +1,6 @@
 <template>
   <main class="info">
-    <page-title title="information" />
+    <!-- <page-title title="information" />
     <div class="page-body">
       <section class="info__sec">
         <h2 class="info__title">物販・特典会レギュレーション</h2>
@@ -28,7 +28,7 @@
       </section>
     </div>
     <layout-btn-default url="/" text="TOPに戻る" />
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

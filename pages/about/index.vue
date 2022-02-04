@@ -1,6 +1,6 @@
 <template>
   <main class="profile">
-    <section class="page-contents">
+    <!-- <section class="page-contents">
       <page-title title="about" />
       <div class="page-body">
         <section class="group">
@@ -23,7 +23,7 @@
         </section>
       </div>
     </section>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

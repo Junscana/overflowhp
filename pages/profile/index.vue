@@ -1,10 +1,10 @@
 <template>
   <main class="profile">
-    <page-title title="profile" />
+    <!-- <page-title title="profile" />
     <div class="page-body">
       <layout-member />
     </div>
-    <breadcrumb :breadcrumbs="breadcrumbs" />
+    <breadcrumb :breadcrumbs="breadcrumbs" /> -->
   </main>
 </template>
 

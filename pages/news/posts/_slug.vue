@@ -1,6 +1,6 @@
 <template>
   <main class="article">
-    <section class="page-contents">
+    <!-- <section class="page-contents">
       <page-title title="news" />
       <div class="page-body">
         <div class="article-content">
@@ -41,7 +41,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </main>
 </template>
 
